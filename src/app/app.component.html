@@ -1,0 +1,11 @@
+<!-- minimal usage
+<div class="drawingContainer" freehand></div>
+-->
+
+<!-- caching control and begin/end stroke handlers
+<div class="drawingContainer" freehand [cache]="cacheStrokes" (beginStroke)="onBeginStroke()" (endStroke)="onEndStroke()"></div>
+-->
+
+<!-- control some drawing properties -->
+<div class="drawingContainer" freehand [fillColor]="'0xff0000'"></div>
+<button class="mt10 blueButton" (click)="onClear()">Clear</button>
