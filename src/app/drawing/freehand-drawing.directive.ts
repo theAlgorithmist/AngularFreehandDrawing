@@ -44,22 +44,22 @@ import {
 export class FreehandDrawingDirective implements AfterViewInit, OnChanges, OnDestroy
 {
   @Input()
-  public interactive: boolean;
+  public interactive: boolean;                    // true if mouse interaction is self-contained inside the directive
 
   @Input()
-  public cache: boolean;
+  public cache: boolean;                          // true if strokes are cached, i.e. x-y coordinates are stored for a single stroke
 
   @Input()
-  public smoothing: number;
+  public smoothing: number;                       // smoothing parameter (suggest in range [0.2, 0.5])
 
   @Input()
-  public fillColor: number;
+  public fillColor: number;                       // fill color, i.e. 0xff0000
 
   @Output('beginStroke')
-  protected _beginStroke: EventEmitter<string>;
+  protected _beginStroke: EventEmitter<string>;   // emit when stroke begins on internal mouse-press
 
   @Output('endStroke')
-  protected _endStroke: EventEmitter<string>;
+  protected _endStroke: EventEmitter<string>;     // emit when stroke ends on internal mouse-up
 
   // static PIXI options
   protected static OPTIONS: Object = {
