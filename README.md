@@ -1,6 +1,6 @@
 # Freehand Drawing in Angular Version 8
 
-This is the code distribution for the Medium Article, _[Freehand Drawing in Angular]()_ .
+This is the code distribution for the Medium Article, _[Freehand Drawing in Angular](https://medium.com/ngconf/freehand-drawing-in-angular-a982e36f90a2)_ .
 
 This is an Angular/Typescript version of a variable-width freehand stroke that was part of a Freehand Drawing Library I developed for Flex about nine years ago.  The algorithm can be traced back to about 1983 when I was a teaching assistant for a graduate computational geometry class at UT Arlington.  The professor also worked in industry and his company had recently obtained an expensive tablet that allowed fixed-width strokes to be drawn on a display.  He had an idea for a variable-width stroke that it was my responsibility to 'make work' to support a lab exercise.  Of course, our Tektronix gear of the day did not allow for continuous coordinate input, so we had to simulate 'strokes' with arrays of x- and y-coordinates.
 
